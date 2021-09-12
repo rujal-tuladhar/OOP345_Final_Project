@@ -1,0 +1,18 @@
+// Name:Rujal Tuladhar
+// Seneca Student ID: 154594188
+// Seneca email: rtuladhar@myseneca.ca
+// Date of completion: 7/25/2021
+//
+// I confirm that I am the only author of this file
+//   and the content was created entirely by me.
+This Project has helped me to understand and improve the wat I code by implementing the concept such as algorithm, STL containers, lambda function and here is brief description of the milestones that I have done.
+The project was divided into three milestone and was done on the period of three weeks, with one milestone per week. In the first milestone, I designed a utilities class which is used to extract a particular word from the line using the delimiter provided, along with the position of the next word and return true if next position of the word was found. 
+In the station class, holds the value after the words are extracted from the line. This class will firstly extract a line from the file.txt using the getline keyword. Than a utility class object is created to pass the line to the extractToken function which will extract the token and return the word along with the next position of the word in the line.
+Milestone 2
+In the milestone 2 I designed the customerOrder class. In this class I created a dynamic array called m_lstItem, which is used to store, the data extracted in an order. Also, I create the move operator & move assignment operator in this class to pass the value to the array in an order. This class main task is to stores the data passed in the array in a right order for the extraction and insertion. Also, I created a display function to display all the data inserted into the array and if the arrays is full it displays “filled”.
+
+Milestone 3
+In this milestone I created the class called workstation and made three containers using deque for inserting of the data in different state. Since it is a deque it acts as a station in this case where I can pass the orders either from the beginning or the end of the container. I also created Boolean function called attempt to move order from Line Manager class into the previously defined deque states.
+Pending state contains the filed which have not passed form the workstation. Complete state holds the orders that have been full and passed along the workstation and have been move from the last station. Incomplete state holds the data which is remove from the station. I have created the vector called active station, which I used for storing all the data in the current assembly line.
+I have created a line manager function with two parameters, one for the file and the other one is a vector of type Workstation class called station. This station vector will store only orders that is in the assembly Line.txtFile. I used the algorithm called find_if to find the station with same name. 
+And, I have created the bool run which will move the data in the pending container to front of the station and remove it one at a time.
